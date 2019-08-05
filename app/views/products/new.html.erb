@@ -1,1 +1,6 @@
-
+<h2>New product</h2>
+<%= form_tag '/products' do %>
+    <p><%= label_tag 'name' %> <%= text_field_tag 'name' %></p>
+    <p><%= label_tag 'description' %> <%= text_area_tag 'description' %></p>
+    <%= submit_tag 'create' %>
+<% end %>
